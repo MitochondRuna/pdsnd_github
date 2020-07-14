@@ -34,4 +34,12 @@ Data files:
 - washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+##### Line  147:
+    Task: Mode of two columns.
+    Source: https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-dataframe-in-pandas-python
+    answer by user = silvado
+    Code used: `df['period'] = df[['Year', 'quarter', ...]].agg('-'.join, axis=1)`
+
+##### Line  87:
+    Task: print 5 lines
+    Source: Checked documentation for pandas, use of `.take()`
