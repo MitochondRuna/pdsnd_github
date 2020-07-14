@@ -24,7 +24,7 @@ This program provides an environment for a user to navigate the results of the U
 
     The user is then given the option to go back to choose raw or summary data again; to reset the filter settings; or to exit the program
 
-#### Files used
+#### Required files:
 main program file:
 - bikeshare.py
 
