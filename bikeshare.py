@@ -249,7 +249,7 @@ def review_data(city_df, city, month, day):
         else:
             print('\nYour input didn\'t quite work, please try again.')
             continue
-
+    return city_df, city, month, day
 
 def main():
 # Get filters and load the dataframe
@@ -301,39 +301,8 @@ def main():
 # city_df moved from here
     get_data(city_df, city, month, day)
 
-<<<<<<< HEAD
-
-    while True:
-        print('-'*60)
-        continue_results = str(input('\nIf you would like to choose another data viewing option for this same data, please type: "view" \nIf you would like to reset the data filters, please type: "reset" \nIf you would like to exit the program, just type: "exit".  ').lower())
-        if continue_results == 'view':
-            get_data(city_df, city, month, day)
-            continue
-        elif continue_results == 'reset':
-            city = reset_city(city)
-            city_df = pd.read_csv(CITY_DATA[city])
-            month = reset_month(month)
-            day = reset_day(day)
-            city_df['Start Time'] = pd.to_datetime(city_df['Start Time'])
-            city_df['month'] = city_df['Start Time'].dt.month
-            city_df['day_of_week'] = city_df['Start Time'].dt.weekday_name
-            if month != 0:
-                city_df = city_df[city_df['month'] == month]
-            if day != 0:
-                city_df = city_df[city_df['day_of_week'] == day]
-            print('-'*10, '\nYour selection is now set to: {}, month: {}, day: {} '.format(city, month, day))
-            get_data(city_df, city, month, day)
-            continue
-        elif continue_results == 'exit':
-            break
-        else:
-            print('\nYour input didn\'t quite work, please try again.')
-            continue
-
-=======
     review_data(city_df, city, month, day)
 
->>>>>>> 625709e... Dissect new function review_data() from main()
 
 # Intro text
 print('\n','-'*10, '\nThis program will help you explore the US BikeShare project data collected in 2017.')
@@ -346,8 +315,4 @@ start()
 if __name__ == "__main__":
     main()
 
-<<<<<<< HEAD
 print('\nAll done! Thank you for exploring this data today!')
-=======
-print('\nAll done! Thank you for exploring this data today!')
->>>>>>> 625709e... Dissect new function review_data() from main()
