@@ -191,12 +191,12 @@ def reset_city(city):
 
 def reset_month(month):
     """
-    Promot user to reset month filter or leave unchanged
+    Prompt user to reset month filter or leave unchanged
     Input: month
     Output: month unchanged, or month reset
     """
 
-    while True:    
+    while True:
         month_response = input('Would you like to change the month? Y/N  ').lower()
         if month_response == 'y' or month_response == 'yes':
             month = month_filter()
@@ -207,6 +207,12 @@ def reset_month(month):
     return month
 
 def reset_day(day):
+        """
+        Prompt user to reset day filter or leave unchanged
+        Input: day
+        Output: day unchanged, or day reset
+        """
+        
     while True:
         day_response = input('Would you like to change the weekday? Y/N  ').lower()
         if day_response == 'y':
