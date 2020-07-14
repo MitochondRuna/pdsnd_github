@@ -18,11 +18,13 @@ This is pretty much my first ever _program_ so I welcome feedback so I may impro
 
 ### Program overview
 This program provides an environment for a user to navigate the results of the US bikeshare data, provided in 3 csv files (see below).
-    The user is prompted to filter data based on a city and a time frame, before moving on to view the data
 
-    The user is given the option to see either raw data or summary statistics based on the selected filter settings
+#### Functionality:
+1. The user is prompted to filter data based on a city and a time frame, before moving on to view the data
 
-    The user is then given the option to go back to choose raw or summary data again; to reset the filter settings; or to exit the program
+2. The user is given the option to see either raw data or summary statistics based on the selected filter settings
+
+3. The user is then given the option to go back to choose raw or summary data again; to reset the filter settings; or to exit the program
 
 #### Required files:
 main program file:
