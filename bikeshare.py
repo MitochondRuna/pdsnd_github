@@ -238,7 +238,7 @@ def review_data(city_df, city, month, day):
         else:
             print('\nYour input didn\'t quite work, please try again.')
             continue
-
+    return city_df, city, month, day        
 
 def main():
 # Get filters and load the dataframe
@@ -304,4 +304,4 @@ start()
 if __name__ == "__main__":
     main()
 
-print('\nAll done! Thank you for exploring this data today!')    
+print('\nAll done! Thank you for exploring this data today!')
