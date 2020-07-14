@@ -3,7 +3,9 @@ This project was created In July 2020 with the first version completed on
 July 7 2020.
 
 ### Project Title
-Replace the Project Title
+Udacity project: US bikeshare data
+
+(aka Runa's first ever program!)
 
 ### Description
 Describe what your project is about and what it does
