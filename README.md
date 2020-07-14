@@ -1,5 +1,6 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created In July 2020 with the first version completed on
+July 7 2020.
 
 ### Project Title
 Replace the Project Title
@@ -12,4 +13,3 @@ Include the files used
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
